@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Pedia</title>
+    <link rel="stylesheet" href="wheather2.css">
+</head>
+
+<body class="body bg">
+   
+    <div class="container">
+        <nav id="navbar">
+            <div id="logo">
+                <img src="icon.png" height="33px" width="33px" alt="weather">
+            </div>
+            <ul>
+                <li class="items"><a href="index.html">Home</a></li>
+                <li class="items"><a href="">Time-Zone</a></li>
+                <li class="items"><a href="">More Info</a></li>
+                <li class="items"><a href="">About-us</a></li>
+                
+            </ul>
+            
+        </nav>
+        <div class="head">
+            <h1>WEATHER APP</h1>
+        </div>
+        <nav>
+
+            <div class="right">
+                <button class="box">
+                    <img src="search.png" alt="">
+                </button>
+                <input type="text" id="search" placeholder="Enter City Name...">
+               
+            </div>
+        </nav>
+        
+        
+        <img src="error.png" class="error hide2" height="200px" width="200px">
+            <h2 class="msg hide3">PLEASE ENTER THE VALID CITY NAME!</h2>
+        <div class="weather visible">
+            <div class="icon">
+                <img src="mist.png" class="weathericon" height="165px" width="165px">
+
+            </div>
+
+            <div class="tempcity">
+                <h1 class="temp"></h1>
+                <div class="country">
+                    <h2 class="city"></h2>
+                    <img src="" class="countryicon" height="33px" width="36px">
+                </div>
+            </div>
+        </div>
+        <div class="info hide">
+            <div class="col">
+                <img src="humidity.png" class="color" height="60px" width="52px">
+                <div class="details">
+                    <p class="wind" id="humiddata"></p>
+                    <p class="humid">Humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="clouddata.png" class="color" height="60px" width="52px">
+                <div class="details">
+                    <p class="wind" id="clouddata"></p>
+                    <p class="humid">Clouds</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="wind.png" height="60px" width="52px" class="color">
+                <div class="details">
+                    <p class="wind" id="winddata"></p>
+                    <p class="humid">Wind</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="wheather2.js"></script>
+</body>
+
+</html>
